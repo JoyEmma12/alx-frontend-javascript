@@ -9,12 +9,12 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     {
       status: signUpRes.status,
       value:
-        signUpRes.status === "fulfilled" ? signUpRes.value : signUpRes.reason,
+        signUpRes.status === 'fulfilled' ? signUpRes.value : signUpRes.reason,
     },
     {
       status: uploadRes.status,
       value:
-        uploadRes.status === "fulfilled"
+        uploadRes.status === 'fulfilled'
           ? uploadRes.value
           : uploadRes.reason.message,
     },
